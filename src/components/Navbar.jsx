@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 
+import { Link } from "react-router-dom"
+
 
 function Navbar() {
 
@@ -37,30 +39,25 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
 
 
-      <div className="logo">
+      <div className={`menu ${open ? "open" : ""}`}>
 
+  <Link to="#signature-experiences">
+    Experiences
+  </Link>
 
-        <div className="brand-line">
+  <Link to="#discover">
+    The Region
+  </Link>
 
-          <span className="brand">
-            CHILD
-          </span>
+  <Link to="/how-it-works">
+    How It Works
+  </Link>
 
+  <Link to="/contact">
+    Contact
+  </Link>
 
-          <span className="brand-small">
-            & Co.
-          </span>
-
-
-        </div>
-
-
-        <span className="tagline">
-          Private Journeys in Champagne
-        </span>
-
-
-      </div>
+</div>
 
 
 

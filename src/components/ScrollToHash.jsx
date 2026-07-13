@@ -1,31 +1,35 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 
-
 function ScrollToHash() {
 
-  const location = useLocation()
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
 
-    if (location.hash) {
+    if (hash) {
 
-      const element = document.getElementById(
-        location.hash.replace("#", "")
-      )
+      const element = document.getElementById(hash.replace("#", ""))
 
       if (element) {
         element.scrollIntoView()
       }
 
+    } else {
+
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant"
+      })
+
     }
 
-  }, [location])
+  }, [pathname, hash])
 
 
   return null
 
 }
-
 
 export default ScrollToHash
