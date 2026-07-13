@@ -1,673 +1,1375 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* ===========================
+   GLOBAL DESIGN SYSTEM
+=========================== */
+
+:root {
+
+  --gold:#c9a227;
+
+  --gold-dark:#b18c1d;
+
+  --black:#111;
+
+  --grey:#555;
+
+  --light-grey:#f8f7f3;
+
+  --white:#ffffff;
+
+  --title-font:"Cormorant Garamond", serif;
+
+  --body-font:"Inter", sans-serif;
+
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  color: white;
+
+
+* {
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
 }
+
+
+
+html {
+
+  scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+  font-family:var(--body-font);
+
+  color:var(--black);
+
+  overflow-x:hidden;
+
+}
+
 
 
 h1,
 h2,
 h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-}
 
+  font-family:var(--title-font);
 
-.hero {
-  height: 100vh;
-
-  position: relative;
-
-  background-image:
-  linear-gradient(
-    rgba(0,0,0,0.30),
-    rgba(0,0,0,0.65)
-  ),
-  url("https://cache.larvf.com/data/photo/w1536_ci/61/vignes-de-champagne.jpg");
-
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
-
-.hero-overlay {
-  max-width: 850px;
-  padding: 60px 40px;
-}
-
-
-.hero h1 {
-  font-size: 70px;
-  font-weight: 300;
-  line-height: 1.15;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-}
-
-
-.hero p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: 0 auto 45px;
-}
-
-
-.hero button {
-
-  background: #c9a227;
-
-  color: white;
-
-  border: none;
-
-  padding: 20px 50px;
-
-  font-size: 14px;
-
-  cursor: pointer;
-
-  text-transform: uppercase;
-
-  letter-spacing: 3px;
-
-  transition: 0.3s;
-
-}
-
-.hero button:hover {
-
-  background: #b18c1d;
-
-}
-
-.why {
-
-  background: white;
-
-  color: #111;
-
-  padding: 100px 10%;
-
-  text-align: center;
+  font-weight:400;
 
 }
 
 
-.why h2 {
 
-  font-size: 42px;
+p {
 
-  font-weight: 400;
+  font-family:var(--body-font);
 
-  margin-bottom: 60px;
+  color:var(--grey);
 
-}
+  font-size:17px;
 
-.why-intro {
-
-  max-width: 750px;
-
-  margin: 0 auto 70px;
+  line-height:1.8;
 
 }
 
 
-.why-intro p {
 
-  color: #555;
+button {
 
-  font-size: 18px;
-
-  line-height: 1.8;
-
-}
-
-.gold-line {
-
-  width: 50px;
-
-  height: 1px;
-
-  background: #c9a227;
-
-  margin: 25px auto;
-
-}
-
-.why-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 30px;
+  font-family:var(--body-font);
 
 }
 
 
-.card {
 
-  padding: 30px 20px;
+a {
 
-  border: none;
-
-  transition: 0.3s;
+  text-decoration:none;
 
 }
 
 
-.card:hover {
 
-  transform: translateY(-8px);
+/* ===========================
+   NAVBAR
+=========================== */
 
-  border-color: #c9a227;
-
-}
-
-
-.card h3 {
-
-  font-size: 26px;
-
-  margin-bottom: 20px;
-
-  font-weight: 400;
-
-}
-
-
-.card p {
-
-  line-height: 1.7;
-
-  color: #555;
-
-}
 
 .navbar {
 
-  position: fixed;
+  position:fixed;
 
-  top: 0;
-  left: 0;
+  top:0;
 
-  width: 100%;
+  left:0;
 
-  display: flex;
+  width:100%;
 
-  justify-content: space-between;
+  display:flex;
 
-  align-items: center;
+  justify-content:space-between;
 
-  padding: 30px 60px;
+  align-items:center;
 
-  z-index: 10;
+  padding:30px 60px;
 
-  color: white;
+  z-index:100;
 
-  transition: 0.4s ease;
+  color:white;
+
+  transition:.4s ease;
 
 }
+
 
 
 .navbar.scrolled {
 
-  background: rgba(255,255,255,0.95);
+  background:rgba(255,255,255,.95);
 
-  color: #111;
+  color:var(--black);
 
-  padding: 20px 60px;
+  padding:20px 60px;
 
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
 
 }
+
 
 
 .logo {
 
-  display: flex;
+  display:flex;
 
-  flex-direction: column;
-
-  color: inherit;
+  flex-direction:column;
 
 }
+
 
 
 .brand-line {
 
-  display: flex;
+  display:flex;
 
-  align-items: baseline;
+  align-items:baseline;
 
-  gap: 6px;
+  gap:6px;
 
 }
+
 
 
 .brand {
 
-  font-family: "Cormorant Garamond", serif;
+  font-family:var(--title-font);
 
-  font-size: 34px;
+  font-size:34px;
 
-  letter-spacing: 4px;
+  letter-spacing:4px;
 
-  font-weight: 500;
+  font-weight:500;
 
 }
+
 
 
 .brand-small {
 
-  font-family: "Cormorant Garamond", serif;
+  font-family:var(--title-font);
 
-  font-size: 20px;
-
-  letter-spacing: 1px;
+  font-size:20px;
 
 }
+
 
 
 .tagline {
 
-  margin-top: -3px;
+  font-size:9px;
 
-  font-family: "Inter", sans-serif;
+  letter-spacing:3px;
 
-  font-size: 9px;
+  text-transform:uppercase;
 
-  letter-spacing: 3px;
+  margin-top:-3px;
 
-  text-transform: uppercase;
-
-  opacity: 0.8;
+  opacity:.8;
 
 }
+
 
 
 .menu {
 
-  display: flex;
+  display:flex;
 
-  gap: 35px;
+  gap:35px;
 
 }
+
 
 
 .menu a {
 
-  color: inherit;
+  color:inherit;
 
-  text-decoration: none;
+  font-size:15px;
 
-  font-size: 15px;
+  letter-spacing:1px;
 
-  letter-spacing: 1px;
-
-  transition: 0.3s;
+  transition:.3s;
 
 }
+
 
 
 .menu a:hover {
 
-  color: #c9a227;
-
-}
-
-.experiences {
-
-  background: #f8f7f3;
-
-  color: #111;
-
-  padding: 100px 8%;
-
-  text-align: center;
+  color:var(--gold);
 
 }
 
 
-.experiences h2 {
 
-  font-size: 45px;
-
-  font-weight: 400;
-
-  margin-bottom: 20px;
-
-}
+/* ===========================
+   HERO
+=========================== */
 
 
-.intro {
+.hero {
 
-  font-size: 18px;
+  height:100vh;
 
-  color: #555;
+  position:relative;
 
-  margin-bottom: 60px;
+  display:flex;
 
-}
+  align-items:center;
 
+  justify-content:center;
 
-.experience-grid {
+  text-align:center;
 
-  display: grid;
+  background-image:
 
-  grid-template-columns: repeat(3, 1fr);
+  linear-gradient(
 
-  gap: 35px;
+    rgba(0,0,0,.30),
 
-}
+    rgba(0,0,0,.65)
 
+  ),
 
-.experience-card {
+  url("https://cache.larvf.com/data/photo/w1536_ci/61/vignes-de-champagne.jpg");
 
-  background: white;
+  background-size:cover;
 
-  padding: 45px 30px;
-
-  text-align: left;
-
-  border: 1px solid #eee;
-
-  transition: 0.4s;
+  background-position:center;
 
 }
 
-
-.experience-card:hover {
-
-  transform: translateY(-10px);
-
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-
-}
-
-
-.experience-card h3 {
-
-  font-size: 24px;
-
-  font-weight: 500;
-
-  margin-bottom: 20px;
-
-}
-
-
-.experience-card p {
-
-  color: #555;
-
-  line-height: 1.7;
-
-  margin-bottom: 30px;
-
-}
-
-
-.experience-card button {
-
-  background: transparent;
-
-  border: 1px solid #c9a227;
-
-  padding: 12px 25px;
-
-  color: #111;
-
-  cursor: pointer;
-
-  letter-spacing: 1px;
-
-}
-
-
-.experience-card button:hover {
-
-  background: #c9a227;
-
-  color: white;
-
-}
 
 
 .hero-overlay {
-  animation: fadeUp 1.5s ease-out forwards;
+
+  max-width:850px;
+
+  padding:60px 40px;
+
+  animation:fadeUp 1.5s ease forwards;
+
+}
+
+
+
+.hero h1 {
+
+  color:white;
+
+  font-size:70px;
+
+  font-weight:300;
+
+  line-height:1.15;
+
+  letter-spacing:2px;
+
+  margin-bottom:30px;
+
 }
 
 
-@keyframes fadeUp {
 
-  from {
+.hero p {
 
-    opacity: 0;
+  color:white;
 
-    transform: translateY(30px);
+  font-size:20px;
 
-  }
+  font-weight:300;
 
+  max-width:700px;
 
-  to {
-
-    opacity: 1;
-
-    transform: translateY(0);
-
-  }
+  margin:0 auto 45px;
 
 }
+
+
+
+.hero button {
+
+  background:var(--gold);
+
+  color:white;
+
+  border:none;
+
+  padding:20px 50px;
+
+  font-size:14px;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+
+
+.hero button:hover {
+
+  background:var(--gold-dark);
+
+}
+
+
+
+/* SCROLL INDICATOR */
+
 
 .scroll {
 
-  position: absolute;
+  position:absolute;
 
-  bottom: 35px;
+  bottom:35px;
 
-  left: 50%;
+  left:50%;
 
-  transform: translateX(-50%);
+  transform:translateX(-50%);
 
-  display: flex;
+  display:flex;
 
-  flex-direction: column;
+  flex-direction:column;
 
-  align-items: center;
+  align-items:center;
 
-  gap: 12px;
+  gap:12px;
 
-  color: white;
+  color:white;
 
-  font-size: 11px;
+  font-size:11px;
 
-  letter-spacing: 3px;
-
-  text-transform: uppercase;
-
-  opacity: 0.8;
+  letter-spacing:3px;
 
 }
+
+
 
 .mouse {
 
-  width: 24px;
+  width:24px;
 
-  height: 38px;
+  height:38px;
 
-  border: 2px solid white;
+  border:2px solid white;
 
-  border-radius: 20px;
+  border-radius:20px;
 
-  display: flex;
+  display:flex;
 
-  justify-content: center;
+  justify-content:center;
 
-  padding-top: 7px;
+  padding-top:7px;
 
 }
+
 
 
 .wheel {
 
-  width: 4px;
+  width:4px;
 
-  height: 8px;
+  height:8px;
 
-  background: white;
+  background:white;
 
-  border-radius: 10px;
+  border-radius:10px;
 
-  animation: wheelMove 1.8s infinite;
+  animation:wheelMove 1.8s infinite;
 
 }
 
 
+
 @keyframes wheelMove {
 
-  0% {
+  0%,100% {
 
-    transform: translateY(0);
+    transform:translateY(0);
 
-    opacity: 1;
+    opacity:1;
 
   }
 
 
   50% {
 
-    transform: translateY(8px);
+    transform:translateY(8px);
 
-    opacity: 0.4;
-
-  }
-
-
-  100% {
-
-    transform: translateY(0);
-
-    opacity: 1;
+    opacity:.4;
 
   }
 
 }
+
+
+
+@keyframes fadeUp {
+
+  from {
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+  }
+
+
+  to {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+  }
+
+}
+
+/* ===========================
+   WHY SECTION
+=========================== */
+
+
+.why {
+
+  background:var(--white);
+
+  color:var(--black);
+
+  padding:120px 10%;
+
+  text-align:center;
+
+}
+
+
+
+.why-intro {
+
+  max-width:800px;
+
+  margin:0 auto 70px;
+
+}
+
+
+
+.why h2 {
+
+  font-size:48px;
+
+  line-height:1.2;
+
+  margin-bottom:25px;
+
+}
+
+
+
+.gold-line {
+
+  width:50px;
+
+  height:1px;
+
+  background:var(--gold);
+
+  margin:25px auto;
+
+}
+
+
+
+.why-description {
+
+  max-width:700px;
+
+  margin:auto;
+
+}
+
+
+
+.why-grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+
+}
+
+
+
+.card {
+
+  padding:35px 25px;
+
+  transition:.3s ease;
+
+}
+
+
+
+.card:hover {
+
+  transform:translateY(-8px);
+
+}
+
+
+
+.card h3 {
+
+  font-size:28px;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.card p {
+
+  font-size:16px;
+
+}
+
+
+
+.why-counter {
+
+  display:none;
+
+}
+
+
+
+
+
+/* ===========================
+   DISCOVER CHAMPAGNE
+=========================== */
 
 
 .discover {
 
-  background: white;
+  background:var(--white);
 
-  color: #111;
-
-  padding: 120px 10%;
+  padding:120px 10%;
 
 }
+
 
 
 .discover-container {
 
-  max-width: 1200px;
+  max-width:1200px;
 
-  margin: auto;
+  margin:auto;
 
-  display: grid;
+  display:grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
-  gap: 80px;
+  gap:80px;
 
-  align-items: center;
+  align-items:center;
 
 }
+
 
 
 .discover-image img {
 
-  width: 100%;
+  width:100%;
 
-  height: 520px;
+  height:520px;
 
-  object-fit: cover;
+  object-fit:cover;
 
 }
+
 
 
 .discover-content span {
 
-  color: #c9a227;
+  color:var(--gold);
 
-  font-size: 12px;
+  font-size:12px;
 
-  letter-spacing: 4px;
+  letter-spacing:4px;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 
 }
+
 
 
 .discover-content h2 {
 
-  color: #111;
+  color:var(--black);
 
-  font-size: 48px;
+  font-size:48px;
 
-  line-height: 1.2;
+  line-height:1.2;
 
-  margin: 25px 0 35px;
+  margin:25px 0 35px;
 
 }
+
 
 
 .discover-content p {
 
-  color: #555;
-
-  font-size: 18px;
-
-  line-height: 1.8;
-
-  margin-bottom: 20px;
+  margin-bottom:20px;
 
 }
+
 
 
 .discover-content button {
 
-  margin-top: 20px;
+  margin-top:20px;
 
-  padding: 15px 35px;
+  padding:15px 35px;
 
-  background: transparent;
+  background:transparent;
 
-  border: 1px solid #c9a227;
+  border:1px solid var(--gold);
 
-  color: #9c7c4b;
+  color:#9c7c4b;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 
-  letter-spacing: 3px;
+  letter-spacing:3px;
 
-  cursor: pointer;
+  cursor:pointer;
+
+  transition:.3s;
 
 }
 
-html {
-  scroll-behavior: smooth;
+
+
+.discover-content button:hover {
+
+  background:var(--gold);
+
+  color:white;
+
+}
+
+
+
+
+
+/* ===========================
+   EXPERIENCES
+=========================== */
+
+
+.experiences {
+
+  background:var(--light-grey);
+
+  color:var(--black);
+
+  padding:120px 10%;
+
+}
+
+
+
+.experiences-header {
+
+  max-width:800px;
+
+  margin:0 auto 70px;
+
+  text-align:center;
+
+}
+
+
+
+.experiences-header span {
+
+  color:var(--gold);
+
+  font-size:12px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+.experiences-header h2 {
+
+  font-size:48px;
+
+  line-height:1.2;
+
+  margin:20px 0 25px;
+
+}
+
+
+
+.experiences-header p {
+
+  max-width:700px;
+
+  margin:auto;
+
+}
+
+
+
+
+
+.experience-grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:40px;
+
+}
+
+
+
+.experience-card {
+
+  background:white;
+
+  overflow:hidden;
+
+  transition:.4s ease;
+
+}
+
+
+
+.experience-card:hover {
+
+  transform:translateY(-10px);
+
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+.experience-image {
+
+  height:320px;
+
+  overflow:hidden;
+
+}
+
+
+
+.experience-image img {
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  transition:.8s ease;
+
+}
+
+
+
+.experience-card:hover img {
+
+  transform:scale(1.05);
+
+}
+
+
+
+.experience-content {
+
+  padding:35px 30px;
+
+}
+
+
+
+.experience-card h3 {
+
+  font-size:30px;
+
+  line-height:1.2;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.experience-card p {
+
+  font-size:15px;
+
+  margin-bottom:30px;
+
+}
+
+
+
+.experience-content a {
+
+  color:#9c7c4b;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+.experience-content a:hover {
+
+  color:var(--gold);
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+
+.hamburger {
+
+  display:none;
+
+}
+
+
+
+@media(max-width:768px) {
+
+
+/* ===========================
+   GLOBAL MOBILE
+=========================== */
+
+
+h1 {
+
+  font-size:42px;
+
+}
+
+
+h2 {
+
+  font-size:36px;
+
+}
+
+
+
+p {
+
+  font-size:16px;
+
+}
+
+
+
+
+/* ===========================
+   NAVBAR MOBILE
+=========================== */
+
+
+.navbar,
+.navbar.scrolled {
+
+  padding:25px;
+
+}
+
+
+
+.navbar.scrolled {
+
+  background:rgba(255,255,255,.95);
+
+  color:var(--black);
+
+}
+
+
+
+.brand {
+
+  font-size:28px;
+
+}
+
+
+
+.brand-small {
+
+  font-size:18px;
+
+}
+
+
+
+.tagline {
+
+  font-size:8px;
+
+}
+
+
+
+.menu {
+
+  position:absolute;
+
+  top:80px;
+
+  left:0;
+
+  width:100%;
+
+  background:rgba(15,15,15,.95);
+
+  backdrop-filter:blur(10px);
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:30px;
+
+  padding:40px 0;
+
+  transform:translateY(-120%);
+
+  transition:.4s ease;
+
+}
+
+
+
+.menu.open {
+
+  transform:translateY(0);
+
+}
+
+
+
+.menu a {
+
+  color:white;
+
+  font-size:18px;
+
+  letter-spacing:2px;
+
+}
+
+
+
+.hamburger {
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  width:28px;
+
+  height:20px;
+
+  background:none;
+
+  border:none;
+
+  cursor:pointer;
+
+}
+
+
+
+.hamburger span {
+
+  width:28px;
+
+  height:1px;
+
+  background:currentColor;
+
+}
+
+
+
+
+
+/* ===========================
+   HERO MOBILE
+=========================== */
+
+
+.hero {
+
+  height:100svh;
+
+}
+
+
+
+.hero-overlay {
+
+  padding:30px 25px;
+
+}
+
+
+
+.hero h1 {
+
+  font-size:42px;
+
+}
+
+
+
+.hero p {
+
+  font-size:16px;
+
+}
+
+
+
+.hero button {
+
+  width:100%;
+
+}
+
+
+
+
+
+/* ===========================
+   WHY MOBILE
+=========================== */
+
+
+.why {
+
+  padding:80px 0;
+
+}
+
+
+
+.why-intro {
+
+  padding:0 25px;
+
+  margin-bottom:50px;
+
+}
+
+
+
+.why h2 {
+
+  font-size:36px;
+
+}
+
+
+
+.why-description {
+
+  max-width:320px;
+
+}
+
+
+
+.why-grid {
+
+  display:flex;
+
+  overflow-x:auto;
+
+  gap:20px;
+
+  padding:0 25px 20px;
+
+  scroll-snap-type:x mandatory;
+
+}
+
+
+
+.card {
+
+  min-width:280px;
+
+  scroll-snap-align:center;
+
+}
+
+
+
+.card h3 {
+
+  font-size:27px;
+
+}
+
+
+
+.card p {
+
+  font-size:15px;
+
+}
+
+
+
+.why-counter {
+
+  display:block;
+
+  text-align:center;
+
+  margin-top:25px;
+
+  font-family:var(--title-font);
+
+  font-size:22px;
+
+  letter-spacing:3px;
+
+  color:var(--gold);
+
+}
+
+
+
+
+
+/* ===========================
+   DISCOVER MOBILE
+=========================== */
+
+
+.discover {
+
+  padding:80px 25px;
+
+}
+
+
+
+.discover-container {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:40px;
+
+}
+
+
+
+.discover-image img {
+
+  height:420px;
+
+}
+
+
+
+.discover-content h2 {
+
+  font-size:38px;
+
+}
+
+
+
+.discover-content p {
+
+  font-size:16px;
+
+}
+
+
+
+
+
+/* ===========================
+   EXPERIENCES MOBILE
+=========================== */
+
+
+.experiences {
+
+  padding:80px 0;
+
+}
+
+
+
+.experiences-header {
+
+  padding:0 25px;
+
+  margin-bottom:45px;
+
+}
+
+
+
+.experiences-header h2 {
+
+  font-size:38px;
+
+}
+
+
+
+.experiences-header p {
+
+  font-size:16px;
+
+}
+
+
+
+.experience-grid {
+
+  display:flex;
+
+  overflow-x:auto;
+
+  gap:25px;
+
+  padding:0 25px 20px;
+
+  scroll-snap-type:x mandatory;
+
+}
+
+
+
+.experience-card {
+
+  min-width:310px;
+
+  scroll-snap-align:center;
+
+}
+
+
+
+.experience-image {
+
+  height:260px;
+
+}
+
+
+
+.experience-content {
+
+  padding:30px 25px;
+
+}
+
+
+
+.experience-card h3 {
+
+  font-size:27px;
+
+}
+
+
+
+.experience-card p {
+
+  font-size:15px;
+
+}
+
+
+
 }

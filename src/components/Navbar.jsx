@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 function Navbar() {
 
   const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
 
 
   useEffect(() => {
@@ -30,6 +31,7 @@ function Navbar() {
   }, [])
 
 
+
   return (
 
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
@@ -39,7 +41,6 @@ function Navbar() {
 
 
         <div className="brand-line">
-
 
           <span className="brand">
             CHILD
@@ -63,35 +64,38 @@ function Navbar() {
 
 
 
-      <div className="menu">
+      <div className={`menu ${open ? "open" : ""}`}>
+
+<a href="#signature-experiences">
+  Experiences
+</a>
+
+<a href="/region">
+  The Region
+</a>
+
+<a href="/how-it-works">
+  How It Works
+</a>
+
+<a href="/contact">
+  Contact
+</a>
+
+</div>
 
 
-        <a href="#">
-          Experiences
-        </a>
 
+      <button 
+        className="hamburger"
+        onClick={() => setOpen(!open)}
+      >
 
-        <a href="#">
-          Destinations
-        </a>
+        <span></span>
+        <span></span>
+        <span></span>
 
-
-        <a href="#">
-          Journal
-        </a>
-
-
-        <a href="#">
-          About
-        </a>
-
-
-        <a href="#">
-          Contact
-        </a>
-
-
-      </div>
+      </button>
 
 
     </nav>

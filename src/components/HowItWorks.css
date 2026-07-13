@@ -1,0 +1,683 @@
+/* ===========================
+   HOW IT WORKS PAGE
+=========================== */
+
+
+.how-page {
+
+  background:#f8f7f3;
+
+  color:#111;
+
+}
+
+
+
+/* ===========================
+   HERO
+=========================== */
+
+
+.how-hero {
+
+  min-height:90vh;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  padding:140px 25px 100px;
+
+}
+
+
+
+.how-hero span,
+.section-header span,
+.fee-content span {
+
+  color:#c9a227;
+
+  font-size:12px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+.how-hero h1 {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:70px;
+
+  font-weight:300;
+
+  line-height:1.15;
+
+  margin:30px 0;
+
+}
+
+
+
+.how-hero p {
+
+  max-width:700px;
+
+  color:#555;
+
+  font-size:19px;
+
+  line-height:1.8;
+
+  margin-bottom:45px;
+
+}
+
+
+
+.how-hero a,
+.final-cta a {
+
+  display:inline-block;
+
+  padding:18px 45px;
+
+  background:#c9a227;
+
+  color:white;
+
+  text-decoration:none;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+  font-size:13px;
+
+  transition:.3s;
+
+}
+
+
+
+.how-hero a:hover,
+.final-cta a:hover {
+
+  background:#b18c1d;
+
+}
+
+
+
+
+
+/* ===========================
+   SECTION HEADERS
+=========================== */
+
+
+.section-header {
+
+  max-width:750px;
+
+  margin:0 auto 70px;
+
+  text-align:center;
+
+}
+
+
+
+.section-header h2,
+.fee-content h2 {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:52px;
+
+  font-weight:400;
+
+  margin:25px 0;
+
+}
+
+
+
+.section-header p,
+.fee-content p {
+
+  color:#555;
+
+  font-size:18px;
+
+  line-height:1.8;
+
+}
+
+
+
+
+
+/* ===========================
+   PROCESS
+=========================== */
+
+
+.process-section {
+
+  padding:120px 8%;
+
+}
+
+
+
+.steps-grid {
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:35px;
+
+}
+
+
+
+.step-card {
+
+  background:white;
+
+  padding:45px 35px;
+
+  text-align:center;
+
+}
+
+
+
+.step-card span {
+
+  font-family:"Cormorant Garamond", serif;
+
+  color:#c9a227;
+
+  font-size:40px;
+
+}
+
+
+
+.step-card h3 {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:30px;
+
+  font-weight:400;
+
+  margin:25px 0 20px;
+
+}
+
+
+
+.step-card p {
+
+  color:#555;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+}
+
+
+
+
+
+/* ===========================
+   FEE SECTION
+=========================== */
+
+
+.fee-section {
+
+  background:white;
+
+  padding:120px 8%;
+
+}
+
+
+
+.fee-content {
+
+  max-width:850px;
+
+  margin:auto;
+
+  text-align:center;
+
+}
+
+
+
+.fee-box {
+
+  margin:50px auto;
+
+  width:220px;
+
+  height:220px;
+
+  border:1px solid #c9a227;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+
+
+.fee-box strong {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:90px;
+
+  font-weight:300;
+
+  color:#c9a227;
+
+  line-height:1;
+
+}
+
+
+
+.fee-box p {
+
+  font-size:14px;
+
+  letter-spacing:1px;
+
+}
+
+
+
+
+
+/* ===========================
+   VALUES
+=========================== */
+
+
+.values-section {
+
+  padding:120px 8%;
+
+}
+
+
+
+.values-grid {
+
+  max-width:1100px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:40px;
+
+}
+
+
+
+.value-card {
+
+  text-align:center;
+
+  padding:40px 30px;
+
+}
+
+
+
+.value-card h3 {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:32px;
+
+  font-weight:400;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.value-card p {
+
+  color:#555;
+
+  line-height:1.8;
+
+}
+
+
+
+
+
+/* ===========================
+   FAQ
+=========================== */
+
+
+.faq-section {
+
+  background:white;
+
+  padding:120px 8%;
+
+}
+
+
+
+.faq-list {
+
+  max-width:850px;
+
+  margin:auto;
+
+}
+
+
+
+.faq-list div {
+
+  padding:30px 0;
+
+  border-bottom:1px solid #ddd;
+
+}
+
+
+
+.faq-list h3 {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:30px;
+
+  font-weight:400;
+
+  margin-bottom:15px;
+
+}
+
+
+
+.faq-list p {
+
+  color:#555;
+
+  line-height:1.8;
+
+}
+
+
+
+
+
+/* ===========================
+   FINAL CTA
+=========================== */
+
+
+.final-cta {
+
+  background:#111;
+
+  color:white;
+
+  text-align:center;
+
+  padding:120px 25px;
+
+}
+
+
+
+.final-cta h2 {
+
+  font-family:"Cormorant Garamond", serif;
+
+  font-size:55px;
+
+  font-weight:300;
+
+  margin-bottom:25px;
+
+}
+
+
+
+.final-cta p {
+
+  color:#ddd;
+
+  font-size:18px;
+
+  margin-bottom:45px;
+
+  line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1100px){
+
+
+.steps-grid {
+
+  grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.values-grid {
+
+  grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+.how-hero {
+
+  min-height:auto;
+
+  padding:120px 25px 80px;
+
+}
+
+
+
+.how-hero h1 {
+
+  font-size:42px;
+
+}
+
+
+
+.how-hero p {
+
+  font-size:16px;
+
+}
+
+
+
+.section-header h2,
+.fee-content h2 {
+
+  font-size:38px;
+
+}
+
+
+
+.process-section,
+.values-section,
+.fee-section,
+.faq-section {
+
+  padding:80px 25px;
+
+}
+
+
+
+.steps-grid {
+
+  grid-template-columns:1fr;
+
+}
+
+
+
+.step-card {
+
+  padding:35px 25px;
+
+}
+
+
+
+.fee-box {
+
+  width:180px;
+
+  height:180px;
+
+}
+
+
+
+.fee-box strong {
+
+  font-size:70px;
+
+}
+
+
+
+.values-grid {
+
+  grid-template-columns:1fr;
+
+}
+
+
+
+.final-cta {
+
+  padding:80px 25px;
+
+}
+
+
+
+.final-cta h2 {
+
+  font-size:40px;
+
+}
+
+
+}
+
+.back-home {
+
+  text-align:center;
+
+  padding:40px 0;
+
+  background:#f8f7f3;
+
+}
+
+
+.back-home a {
+
+  color:#9c7c4b;
+
+  text-decoration:none;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  transition:.3s;
+
+}
+
+
+.back-home a:hover {
+
+  color:#c9a227;
+
+}

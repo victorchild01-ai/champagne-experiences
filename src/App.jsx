@@ -7,6 +7,7 @@ import Hero from "./components/Hero"
 import WhyUs from "./components/WhyUs"
 import DiscoverChampagne from "./components/DiscoverChampagne"
 import Experiences from "./components/Experiences"
+import HowItWorks from "./pages/HowItWorks"
 
 import PrivateTours from "./pages/PrivateTours"
 import ChampagneHouses from "./pages/ChampagneHouses"
@@ -85,6 +86,11 @@ function App() {
   <Route 
   path="/contact" 
   element={<Contact />} 
+/>
+
+<Route
+  path="/how-it-works"
+  element={<HowItWorks />}
 />
 
 </Routes>

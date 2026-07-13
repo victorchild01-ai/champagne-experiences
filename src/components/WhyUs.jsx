@@ -1,4 +1,8 @@
+import { useRef, useState } from "react"
+
+
 function WhyUs() {
+
 
 const items = [
   {
@@ -20,57 +24,95 @@ const items = [
 ]
 
 
-  return (
+const sliderRef = useRef(null)
 
-    <section className="why">
+const [current, setCurrent] = useState(1)
 
 
-      <div className="why-intro">
 
-        <h2>
-          The Art of Experiencing Champagne
-        </h2>
+const handleScroll = () => {
+
+  const slider = sliderRef.current
+
+  if (!slider) return
+
+
+  const index = Math.round(
+    slider.scrollLeft / slider.children[0].offsetWidth
+  ) + 1
+
+
+  setCurrent(index)
+
+}
+
+
+
+return (
+
+<section className="why">
+
+
+<div className="why-intro">
+
+<h2>
+The Art of Experiencing Champagne
+</h2>
 
 <div className="gold-line"></div>
 
-        <p>
-          More than a journey, a private invitation to discover the
-          culture, heritage and hidden treasures of Champagne.
-        </p>
+<p className="why-description">
+  More than a journey, a private invitation to discover the
+  culture, heritage and hidden treasures of Champagne.
+</p>
 
-      </div>
-
-
-
-      <div className="why-grid">
+</div>
 
 
-        {items.map((item, index) => (
 
-          <div className="card" key={index}>
-
-
-            <h3>
-              {item.title}
-            </h3>
+<div 
+className="why-grid"
+ref={sliderRef}
+onScroll={handleScroll}
+>
 
 
-            <p>
-              {item.text}
-            </p>
+{items.map((item,index)=>(
+
+<div className="card" key={index}>
 
 
-          </div>
-
-        ))}
-
-
-      </div>
+<h3>
+{item.title}
+</h3>
 
 
-    </section>
+<p>
+{item.text}
+</p>
 
-  )
+
+</div>
+
+))}
+
+
+</div>
+
+
+
+<div className="why-counter">
+
+{String(current).padStart(2,"0")} / 04
+
+</div>
+
+
+
+</section>
+
+)
+
 }
 
 
