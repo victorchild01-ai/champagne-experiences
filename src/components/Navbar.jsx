@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-
 import { Link } from "react-router-dom"
 
 
@@ -13,11 +12,7 @@ function Navbar() {
 
     const handleScroll = () => {
 
-      if (window.scrollY > 50) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
+      setScrolled(window.scrollY > 50)
 
     }
 
@@ -29,7 +24,6 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll)
     }
 
-
   }, [])
 
 
@@ -39,51 +33,61 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
 
 
+      <div className="logo">
+
+
+        <div className="brand-line">
+
+          <span className="brand">
+            CHILD
+          </span>
+
+
+          <span className="brand-small">
+            & Co.
+          </span>
+
+
+        </div>
+
+
+        <span className="tagline">
+          Private Journeys in Champagne
+        </span>
+
+
+      </div>
+
+
+
       <div className={`menu ${open ? "open" : ""}`}>
 
-  <Link to="#signature-experiences">
-    Experiences
-  </Link>
 
-  <Link to="#discover">
-    The Region
-  </Link>
-
-  <Link to="/how-it-works">
-    How It Works
-  </Link>
-
-  <Link to="/contact">
-    Contact
-  </Link>
-
-</div>
+        <Link to="#signature-experiences">
+          Experiences
+        </Link>
 
 
+        <Link to="#discover">
+          The Region
+        </Link>
 
-      <div className={`menu ${open ? "open" : ""}`}>
 
-<a href="#signature-experiences">
-  Experiences
-</a>
+        <Link to="/how-it-works">
+          How It Works
+        </Link>
 
-<a href="/region">
-  The Region
-</a>
 
-<a href="/how-it-works">
-  How It Works
-</a>
+        <Link to="/contact">
+          Contact
+        </Link>
 
-<a href="/contact">
-  Contact
-</a>
 
-</div>
+      </div>
 
 
 
-      <button 
+      <button
         className="hamburger"
         onClick={() => setOpen(!open)}
       >
@@ -98,6 +102,7 @@ function Navbar() {
     </nav>
 
   )
+
 }
 
 

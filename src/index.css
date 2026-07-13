@@ -156,6 +156,8 @@ a {
 
   flex-direction:column;
 
+  color:inherit;
+
 }
 
 
@@ -210,6 +212,27 @@ a {
 
 }
 
+.brand {
+
+  font-size:28px;
+
+}
+
+
+
+.brand-small {
+
+  font-size:18px;
+
+}
+
+
+
+.tagline {
+
+  font-size:8px;
+
+}
 
 
 .menu {
