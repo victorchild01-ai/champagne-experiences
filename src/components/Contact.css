@@ -9,11 +9,57 @@
 
   min-height:100vh;
 
-  padding:140px 8% 100px;
+  padding:0 8% 100px;
 
   color:#111;
 
 }
+
+
+
+/* ===========================
+   BACK HOME TOP
+=========================== */
+
+
+.page-back-home {
+
+  text-align:center;
+
+  padding-top:120px;
+
+  padding-bottom:40px;
+
+}
+
+
+
+.page-back-home a {
+
+  color:#9c7c4b;
+
+  text-decoration:none;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  opacity:.75;
+
+  transition:.3s;
+
+}
+
+
+.page-back-home a:hover {
+
+  opacity:1;
+
+}
+
+
 
 
 
@@ -134,11 +180,9 @@
 
 
 
-
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-
 
   width:100%;
 
@@ -166,7 +210,6 @@
 .contact-form select:focus,
 .contact-form textarea:focus {
 
-
   outline:none;
 
   border-color:#c9a227;
@@ -174,8 +217,6 @@
   box-shadow:0 0 0 4px rgba(201,162,39,.12);
 
 }
-
-
 
 
 
@@ -188,8 +229,6 @@
   gap:20px;
 
 }
-
-
 
 
 
@@ -345,7 +384,6 @@
 .response-box,
 .process-box {
 
-
   background:white;
 
   padding:30px;
@@ -397,9 +435,20 @@
 
 
 
-.contact-info a {
+/* ===========================
+   LINKS
+=========================== */
 
-  color:#9c7c4b;
+
+.how-link {
+
+  display:inline-block;
+
+  margin-top:20px;
+
+  color:#c9a227;
+
+  text-decoration:none;
 
   letter-spacing:2px;
 
@@ -412,10 +461,54 @@
 }
 
 
+.how-link:hover {
 
-.contact-info a:hover {
+  color:#b18c1d;
 
-  color:#c9a227;
+}
+
+
+
+
+
+/* ===========================
+   BACK HOME BOTTOM
+=========================== */
+
+
+.back-home {
+
+  text-align:center;
+
+  padding:60px 0 20px;
+
+}
+
+
+
+.back-home a {
+
+  color:#9c7c4b;
+
+  text-decoration:none;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  opacity:.75;
+
+  transition:.3s;
+
+}
+
+
+
+.back-home a:hover {
+
+  opacity:1;
 
 }
 
@@ -446,7 +539,6 @@
 }
 
 
-
 }
 
 
@@ -463,7 +555,15 @@
 
 .contact-page {
 
-  padding:110px 25px 70px;
+  padding:0 25px 70px;
+
+}
+
+
+
+.page-back-home {
+
+  padding-top:100px;
 
 }
 
@@ -544,31 +644,12 @@
 }
 
 
-}
 
-.how-link {
+.back-home {
 
-  display:inline-block;
-
-  margin-top:20px;
-
-  color:#c9a227;
-
-  text-decoration:none;
-
-  letter-spacing:2px;
-
-  font-size:13px;
-
-  text-transform:uppercase;
-
-  transition:.3s;
+  padding-top:40px;
 
 }
 
-
-.how-link:hover {
-
-  color:#b18c1d;
 
 }

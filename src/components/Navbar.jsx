@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import i18n from "i18next"
+import i18n from "../i18n"
 import { useTranslation } from "react-i18next"
 
 
@@ -9,6 +9,10 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const { t } = useTranslation()
+  const changeLanguage = (lang) => {
+  i18n.changeLanguage(lang)
+  localStorage.setItem("language", lang)
+}
 
 
   useEffect(() => {
@@ -87,14 +91,14 @@ function Navbar() {
 
         <div className="language-switcher">
 
-  <button onClick={() => i18n.changeLanguage("en")}>
-    EN
+  <button onClick={() => changeLanguage("en")}>
+    ENG
   </button>
 
   <span>|</span>
 
-  <button onClick={() => i18n.changeLanguage("fr")}>
-    FR
+  <button onClick={() => changeLanguage("fr")}>
+    FRA
   </button>
 
 </div>

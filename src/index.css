@@ -266,6 +266,39 @@ a {
 }
 
 
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 25px;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+
+.language-switcher button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+
+.language-switcher button:hover {
+  opacity: 1;
+}
+
+
+.language-switcher span {
+  opacity: 0.5;
+}
+
 
 /* ===========================
    HERO
@@ -1119,7 +1152,14 @@ background: white;
 
 }
 
+@media(max-width:768px){
 
+.language-switcher {
+  margin-left:0;
+  margin-top:20px;
+}
+
+}
 
 
 

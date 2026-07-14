@@ -12,6 +12,14 @@ function Contact() {
 
     <section className="contact-page">
 
+      <div className="page-back-home">
+
+  <Link to="/">
+    ← {t("backHome")}
+  </Link>
+
+</div>
+
 
       <div className="contact-hero">
 
@@ -307,9 +315,13 @@ function Contact() {
 
 
 
-          <Link to="/">
-            ← {t("backHome")}
-          </Link>
+          <div className="back-home">
+
+  <Link to="/">
+    ← {t("backHome")}
+  </Link>
+
+</div>
 
 
 

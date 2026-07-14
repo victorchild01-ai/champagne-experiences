@@ -681,3 +681,99 @@
   color:#c9a227;
 
 }
+
+
+/* ===========================
+   BACK HOME LINKS
+=========================== */
+
+
+.page-back-home,
+.back-home {
+
+  text-align:center;
+
+}
+
+
+/* TOP BACK HOME */
+
+.page-back-home {
+
+  padding-top:120px;
+
+  padding-bottom:20px;
+
+}
+
+
+/* BOTTOM BACK HOME */
+
+.back-home {
+
+  padding-top:50px;
+
+  padding-bottom:50px;
+
+  background:#f8f7f3;
+
+}
+
+
+
+/* LINK STYLE */
+
+.page-back-home a,
+.back-home a {
+
+  color:#9c7c4b;
+
+  text-decoration:none;
+
+  font-size:13px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  opacity:0.75;
+
+  transition:opacity .3s ease;
+
+}
+
+
+
+.page-back-home a:hover,
+.back-home a:hover {
+
+  opacity:1;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+  .page-back-home {
+
+    padding-top:100px;
+
+    padding-bottom:20px;
+
+  }
+
+
+  .back-home {
+
+    padding-top:40px;
+
+    padding-bottom:40px;
+
+  }
+
+
+}

@@ -64,6 +64,14 @@ function HowItWorks() {
 
     <section className="how-page">
 
+      <div className="page-back-home">
+
+  <Link to="/">
+    ← {t("backHome")}
+  </Link>
+
+</div>
+
 
 
       {/* HERO */}
@@ -317,28 +325,12 @@ function HowItWorks() {
           <div>
 
             <h3>
-              When should I contact you?
-            </h3>
+  {t("faq1Question")}
+</h3>
 
-            <p>
-              We recommend reaching out several weeks before your journey
-              to allow us to carefully design every detail.
-            </p>
-
-          </div>
-
-
-
-          <div>
-
-            <h3>
-              Do you organise last-minute experiences?
-            </h3>
-
-            <p>
-              Depending on availability, we can sometimes accommodate
-              shorter timelines.
-            </p>
+<p>
+  {t("faq1Answer")}
+</p>
 
           </div>
 
@@ -347,13 +339,26 @@ function HowItWorks() {
           <div>
 
             <h3>
-              How does payment work?
-            </h3>
+  {t("faq2Question")}
+</h3>
 
-            <p>
-              Your coordination fee is paid to Child & Co. All other
-              services are paid directly to the selected providers.
-            </p>
+<p>
+  {t("faq2Answer")}
+</p>
+
+          </div>
+
+
+
+          <div>
+
+            <h3>
+  {t("faq3Question")}
+</h3>
+
+<p>
+  {t("faq3Answer")}
+</p>
 
           </div>
 
@@ -377,22 +382,19 @@ function HowItWorks() {
 
 
         <h2>
-          Ready To Create Your Champagne Journey?
-        </h2>
+  {t("ctaTitle")}
+</h2>
+
+<p>
+  {t("ctaText")}
+</p>
 
 
-        <p>
-          Share your vision with us and let us craft an experience
-          designed entirely around you.
-        </p>
+<Link to="/contact">
 
+  {t("ctaButton")}
 
-
-        <Link to="/contact">
-
-          Begin Your Journey
-
-        </Link>
+</Link>
 
 
       </section>
@@ -400,8 +402,8 @@ function HowItWorks() {
 <div className="back-home">
 
   <Link to="/">
-    ← Back to Home
-  </Link>
+  ← {t("backHome")}
+</Link>
 
 </div>
 
