@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 import "../components/Contact.css"
 
 
 function Contact() {
+
+  const { t } = useTranslation()
 
   return (
 
@@ -12,15 +15,13 @@ function Contact() {
 
       <div className="contact-hero">
 
-        <h1>
-          Plan Your Private Champagne Journey
+       <h1>
+        {t("contactHeroTitle")}
         </h1>
 
-        <p>
-          Every exceptional experience begins with a conversation.
-          Share your vision with us, and we will carefully craft
-          a Champagne journey designed entirely around you.
-        </p>
+      <p>
+       {t("contactHeroText")}
+      </p>
 
       </div>
 
@@ -34,20 +35,20 @@ function Contact() {
 
 
           <h2>
-            Your Details
-          </h2>
+  {t("yourDetails")}
+</h2>
 
 
           <div className="double-input">
 
             <input
               type="text"
-              placeholder="First Name"
+              placeholder={t("firstName")}
             />
 
             <input
               type="text"
-              placeholder="Last Name"
+              placeholder={t("lastName")}
             />
 
           </div>
@@ -55,20 +56,20 @@ function Contact() {
 
           <input
             type="email"
-            placeholder="Email Address"
+            placeholder={t("email")}
           />
 
 
           <input
             type="text"
-            placeholder="Country of Residence"
+            placeholder={t("country")}
           />
 
 
 
           <h2>
-            Your Journey
-          </h2>
+ {t("yourJourney")}
+</h2>
 
 
           <div className="double-input">
@@ -89,31 +90,31 @@ function Contact() {
 
             <input
               type="number"
-              placeholder="Number of Guests"
+              placeholder={t("guests")}
             />
 
 
             <select>
 
               <option>
-                Approximate Budget
-              </option>
+ {t("budget")}
+</option>
 
               <option>
-                Under €1,000 per person
-              </option>
+ {t("budget1")}
+</option>
 
-              <option>
-                €1,000 - €3,000 per person
-              </option>
+<option>
+ {t("budget2")}
+</option>
 
-              <option>
-                €3,000 - €5,000 per person
-              </option>
+<option>
+ {t("budget3")}
+</option>
 
-              <option>
-                €5,000+ per person
-              </option>
+<option>
+ {t("budget4")}
+</option>
 
             </select>
 
@@ -123,8 +124,8 @@ function Contact() {
 
 
           <h2>
-            Your Interests
-          </h2>
+ {t("yourInterests")}
+</h2>
 
 
 
@@ -133,49 +134,49 @@ function Contact() {
 
             <label>
               <input type="checkbox" />
-              Private Champagne Houses
+              {t("interest1")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Family Producers
+              {t("interest2")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Michelin Gastronomy
+              {t("interest3")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Luxury Accommodation
+              {t("interest4")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Private Transportation
+              {t("interest5")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Vineyard Experiences
+              {t("interest6")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Cultural Discoveries
+              {t("interest7")}
             </label>
 
 
             <label>
               <input type="checkbox" />
-              Romantic Experiences
+              {t("interest8")}
             </label>
 
 
@@ -186,15 +187,15 @@ function Contact() {
 
 
           <h2>
-            Tell Us More
-          </h2>
+ {t("tellUsMore")}
+</h2>
 
 
           <textarea
 
             rows="7"
 
-            placeholder="Tell us about your expectations, special occasions, preferences or anything you would like us to consider..."
+            placeholder={t("messagePlaceholder")}
 
           ></textarea>
 
@@ -204,7 +205,7 @@ function Contact() {
 
           <button type="submit">
 
-            Request Your Private Proposal
+            {t("requestProposal")}
 
           </button>
 
@@ -220,23 +221,19 @@ function Contact() {
 
 
           <h2>
-            A Journey Crafted Around You
-          </h2>
+ {t("craftedAroundYou")}
+</h2>
 
 
 
           <p>
-            Every request is personally reviewed to create an
-            experience reflecting your interests, your pace
-            and your expectations.
+            {t("craftedText1")}
           </p>
 
 
 
           <p>
-            From prestigious Champagne houses to hidden family
-            estates, exceptional gastronomy and unforgettable
-            moments, every detail is thoughtfully curated.
+            {t("craftedText2")}
           </p>
 
 
@@ -247,14 +244,12 @@ function Contact() {
 
 
             <h3>
-              Our Commitment
-            </h3>
+ {t("commitment")}
+</h3>
 
 
             <p>
-              Within 24 hours, our team will review your request
-              and begin designing the first ideas for your private
-              Champagne experience.
+              {t("commitmentText")}
             </p>
 
 
@@ -264,7 +259,7 @@ function Contact() {
           to="/how-it-works"
           className="how-link"
           >
-         Discover How Your Journey Is Crafted →
+         {t("discoverJourney")} →
           </Link>
 
 
@@ -275,28 +270,34 @@ function Contact() {
 
 
             <h3>
-              The Process
-            </h3>
+ {t("process")}
+</h3>
 
 
             <p>
-              <strong>01 — Share your vision</strong>
+              <strong>
+{t("contactStep1Title")}
+</strong>
               <br />
-              Tell us about your expectations and preferences.
+              {t("contactStep1Text")}
             </p>
 
 
             <p>
-              <strong>02 — Receive your proposal</strong>
+              <strong>
+{t("contactStep2Title")}
+</strong>
               <br />
-              We create a tailored experience around your wishes.
+              {t("contactStep2Text")}
             </p>
 
 
             <p>
-              <strong>03 — Enjoy your journey</strong>
+              <strong>
+{t("contactStep3Title")}
+</strong>
               <br />
-              Every detail is coordinated before your arrival.
+              {t("contactStep3Text")}
             </p>
 
 
@@ -307,7 +308,7 @@ function Contact() {
 
 
           <Link to="/">
-            ← Back to Home
+            ← {t("backHome")}
           </Link>
 
 

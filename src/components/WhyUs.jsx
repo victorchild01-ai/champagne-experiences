@@ -1,25 +1,28 @@
 import { useRef, useState } from "react"
+import { useTranslation } from "react-i18next";
 
 
 function WhyUs() {
 
+const { t } = useTranslation();
+
 
 const items = [
   {
-    title: "Bespoke by Design",
-    text: "Every journey begins with your desires, your rhythm and your vision. Each experience is crafted entirely around you."
+    title: "bespokeTitle",
+    text: "bespokeText"
   },
   {
-    title: "Private Access",
-    text: "From prestigious Champagne houses to hidden family estates, we reveal places and encounters beyond the ordinary."
+    title: "accessTitle",
+    text: "accessText"
   },
   {
-    title: "Local Expertise",
-    text: "A deep connection with Champagne, its vineyards, heritage and passionate people allows us to create truly authentic moments."
+    title: "expertiseTitle",
+    text: "expertiseText"
   },
   {
-    title: "Seamless Service",
-    text: "From your first conversation to your final departure, every detail is carefully designed and personally orchestrated."
+    title: "serviceTitle",
+    text: "serviceText"
   }
 ]
 
@@ -56,14 +59,13 @@ return (
 <div className="why-intro">
 
 <h2>
-The Art of Experiencing Champagne
+{t("whyTitle")}
 </h2>
 
 <div className="gold-line"></div>
 
 <p className="why-description">
-  More than a journey, a private invitation to discover the
-  culture, heritage and hidden treasures of Champagne.
+  {t("whyDescription")}
 </p>
 
 </div>
@@ -83,12 +85,11 @@ onScroll={handleScroll}
 
 
 <h3>
-{item.title}
+{t(item.title)}
 </h3>
 
-
 <p>
-{item.text}
+{t(item.text)}
 </p>
 
 

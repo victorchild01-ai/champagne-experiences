@@ -1,59 +1,62 @@
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 import "../components/HowItWorks.css";
 
 
 function HowItWorks() {
 
+  const { t } = useTranslation()
+
 
   const steps = [
 
-    {
-      number: "01",
-      title: "First Conversation",
-      text: "Every journey begins with a personal exchange. We take the time to understand your wishes, expectations and the experience you envision."
-    },
+  {
+    number: "01",
+    title: t("step1Title"),
+    text: t("step1Text")
+  },
 
-    {
-      number: "02",
-      title: "Tailor-Made Design",
-      text: "Based on your vision, we carefully curate experiences, partners and details that bring your private Champagne journey to life."
-    },
+  {
+    number: "02",
+    title: t("step2Title"),
+    text: t("step2Text")
+  },
 
-    {
-      number: "03",
-      title: "Your Private Proposal",
-      text: "Within 24 hours, we present a personalised proposal including carefully selected experiences and recommendations."
-    },
+  {
+    number: "03",
+    title: t("step3Title"),
+    text: t("step3Text")
+  },
 
-    {
-      number: "04",
-      title: "Your Champagne Journey",
-      text: "Once confirmed, every detail is coordinated before your arrival to ensure a seamless and unforgettable experience."
-    }
+  {
+    number: "04",
+    title: t("step4Title"),
+    text: t("step4Text")
+  }
 
-  ]
+]
 
 
 
   const values = [
 
-    {
-      title: "Authentic Access",
-      text: "Through our local expertise and trusted relationships, we reveal the places, people and stories that make Champagne truly unique."
-    },
+  {
+    title: t("value1Title"),
+    text: t("value1Text")
+  },
 
-    {
-      title: "Time Efficiency",
-      text: "We take care of the research, organisation and coordination, allowing you to fully enjoy the experience."
-    },
+  {
+    title: t("value2Title"),
+    text: t("value2Text")
+  },
 
-    {
-      title: "Personal Attention",
-      text: "Every journey is designed around your expectations, your pace and the moments you wish to create."
-    }
+  {
+    title: t("value3Title"),
+    text: t("value3Text")
+  }
 
-  ]
+]
 
 
 
@@ -70,28 +73,22 @@ function HowItWorks() {
 
 
         <span>
-          Our Approach
+        {t("ourApproach")}
         </span>
 
 
         <h1>
-          A Seamless Journey,
-          <br />
-          Designed Around You
+        {t("howHeroTitle")}
         </h1>
 
 
         <p>
-          From your first conversation to your final departure,
-          every detail is carefully curated to create an exceptional
-          Champagne experience.
+        {t("howHeroText")}
         </p>
 
 
         <Link to="/contact">
-
-          Start Planning Your Journey
-
+        {t("startPlanning")}
         </Link>
 
 
@@ -110,20 +107,17 @@ function HowItWorks() {
         <div className="section-header">
 
 
-          <span>
-            The Process
-          </span>
+         <span>
+        {t("process")}
+        </span>
 
+        <h2>
+        {t("processTitle")}
+        </h2>
 
-          <h2>
-            From Vision To Experience
-          </h2>
-
-
-          <p>
-            A personalised approach designed to transform your wishes
-            into a unique Champagne journey.
-          </p>
+        <p>
+       {t("processText")}
+        </p>
 
 
         </div>
@@ -185,20 +179,17 @@ function HowItWorks() {
 
 
           <span>
-            A Transparent Approach
+          {t("transparentApproach")}
           </span>
 
-
           <h2>
-            Our Service & Coordination Fee
+          {t("feeTitle")}
           </h2>
 
 
 
           <p>
-            Our role is to design, organise and coordinate your
-            Champagne journey. We are remunerated exclusively through
-            a transparent coordination fee.
+          {t("feeText")}
           </p>
 
 
@@ -212,7 +203,7 @@ function HowItWorks() {
 
 
             <p>
-              of the total value of your journey
+            {t("feePercentage")}
             </p>
 
 
@@ -222,10 +213,8 @@ function HowItWorks() {
 
 
           <p>
-            Your personalised proposal includes the complete cost of
-            all selected services. Each experience remains directly
-            provided and paid to our carefully selected partners.
-          </p>
+        {t("feeDetails")}
+        </p>
 
 
         </div>
@@ -248,12 +237,11 @@ function HowItWorks() {
 
 
           <span>
-            Beyond Reservations
+          {t("beyondReservations")}
           </span>
 
-
           <h2>
-            More Than A Booking Service
+          {t("moreThanBooking")}
           </h2>
 
 
@@ -311,12 +299,11 @@ function HowItWorks() {
 
 
           <span>
-            Frequently Asked Questions
+          {t("faq")}
           </span>
 
-
           <h2>
-            Everything You Need To Know
+          {t("faqTitle")}
           </h2>
 
 

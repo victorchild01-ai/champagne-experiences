@@ -1,24 +1,28 @@
 import { Link } from "react-router-dom"
 
+import { useTranslation } from "react-i18next";
+
 
 function Hero() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="hero">
 
       <div className="hero-overlay">
 
         <h1>
-          Discover Champagne Beyond the Ordinary
+          {t("heroTitle")}
         </h1>
 
         <p>
-          Exceptional moments, hidden places and unforgettable experiences
-          crafted around you.
+          {t("heroSubtitle")}
         </p>
 
         <Link to="/contact">
         <button>
-        Plan Your Journey
+        {t("heroButton")}
         </button>
         </Link>
 

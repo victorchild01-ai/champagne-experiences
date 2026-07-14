@@ -1,4 +1,10 @@
+import { useTranslation } from "react-i18next";
+
+
 function DiscoverChampagne() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="discover">
 
@@ -15,29 +21,25 @@ function DiscoverChampagne() {
         <div className="discover-content">
 
           <span>
-            Our Philosophy
+          {t("philosophy")}
           </span>
 
           <h2>
-            More Than Champagne.
-            <br />
-            A Journey Into Its Soul.
+          {t("philosophyTitle")}
           </h2>
 
 
           <p>
-            Behind every bottle lies a story — generations of craftsmanship,
-            unique terroirs and passionate people.
+          {t("philosophyText1")}
           </p>
 
           <p>
-            Through private experiences and local connections, we reveal the
-            authentic soul of Champagne, beyond the iconic names.
-          </p>
+        {t("philosophyText2")}
+        </p>
 
 
           <button>
-            Discover Our Philosophy
+          {t("philosophyButton")}
           </button>
 
         </div>

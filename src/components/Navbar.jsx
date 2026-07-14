@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import i18n from "i18next"
+import { useTranslation } from "react-i18next"
 
 
 function Navbar() {
 
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { t } = useTranslation()
 
 
   useEffect(() => {
@@ -64,23 +67,37 @@ function Navbar() {
 
 
         <Link to="#signature-experiences">
-          Experiences
+        {t("experiences")}
         </Link>
 
 
         <Link to="#discover">
-          The Region
+        {t("region")}
         </Link>
 
 
         <Link to="/how-it-works">
-          How It Works
+        {t("howItWorks")}
         </Link>
 
 
         <Link to="/contact">
-          Contact
+        {t("contact")}
         </Link>
+
+        <div className="language-switcher">
+
+  <button onClick={() => i18n.changeLanguage("en")}>
+    EN
+  </button>
+
+  <span>|</span>
+
+  <button onClick={() => i18n.changeLanguage("fr")}>
+    FR
+  </button>
+
+</div>
 
 
       </div>

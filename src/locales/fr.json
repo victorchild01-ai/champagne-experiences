@@ -1,0 +1,168 @@
+{
+  "heroTitle": "Découvrez la Champagne autrement",
+"heroSubtitle": "Des moments exceptionnels, des lieux secrets et des expériences inoubliables imaginés autour de vous.",
+  "heroButton": "Planifiez votre séjour",
+  "experiences": "Expériences",
+  "region": "La Région",
+  "howItWorks": "Comment ça marche",
+  "contact": "Contact",
+
+  "whyTitle": "L'Art de vivre la Champagne",
+"whyDescription": "Plus qu'un voyage, une invitation privée à découvrir la culture, le patrimoine et les trésors cachés de la Champagne.",
+
+"bespokeTitle": "Une expérience sur mesure",
+"bespokeText": "Chaque voyage commence par vos envies, votre rythme et votre vision. Chaque expérience est entièrement imaginée autour de vous.",
+
+"accessTitle": "Accès privilégié",
+"accessText": "Des grandes Maisons de Champagne aux domaines familiaux confidentiels, nous révélons des lieux et des rencontres hors du commun.",
+
+"expertiseTitle": "Une expertise locale",
+"expertiseText": "Notre lien profond avec la Champagne, ses vignobles, son patrimoine et ses passionnés nous permet de créer des moments véritablement authentiques.",
+
+"serviceTitle": "Un service sans faille",
+"serviceText": "De votre première conversation jusqu'à votre départ, chaque détail est soigneusement pensé et orchestré personnellement.",
+
+
+"philosophy": "Notre Philosophie",
+
+"philosophyTitle": "Bien plus que du Champagne. Un voyage au cœur de son âme.",
+
+"philosophyText1": "Derrière chaque bouteille se cache une histoire — des générations de savoir-faire, des terroirs uniques et des femmes et des hommes passionnés.",
+
+"philosophyText2": "À travers des expériences privées et des rencontres locales, nous révélons l'âme authentique de la Champagne, au-delà des noms emblématiques.",
+
+"philosophyButton": "Découvrir notre philosophie",
+
+
+"expertise": "Notre Expertise",
+"signatureExperiences": "Expériences Signature",
+"experiencesDescription": "Des voyages uniques révélant le patrimoine, le savoir-faire et l'élégance de la Champagne.",
+"exploreJourney": "Découvrir le voyage",
+
+"privateToursTitle": "Visites privées de la Champagne",
+"privateToursText": "Découvrez les paysages, villages et histoires secrètes de la Champagne à travers un voyage entièrement imaginé autour de vos envies.",
+
+"champagneHousesTitle": "Visites de Maisons de Champagne",
+"champagneHousesText": "Entrez dans l'univers des grandes Maisons de Champagne grâce à des visites privées de caves et des dégustations exceptionnelles.",
+
+"gastronomyTitle": "Gastronomie étoilée",
+"gastronomyText": "Découvrez la Champagne à travers des expériences culinaires raffinées et des accords gastronomiques mémorables.",
+
+"transportationTitle": "Transport de luxe",
+"transportationText": "Parcourez la Champagne en toute sérénité grâce à des transferts privés discrets et des véhicules soigneusement sélectionnés.",
+
+"romanticEscapesTitle": "Escapades romantiques en Champagne",
+"romanticEscapesText": "Célébrez les moments les plus précieux avec des escapades intimes imaginées pour deux.",
+
+"familyExperiencesTitle": "Expériences familiales en Champagne",
+"familyExperiencesText": "Partagez la magie de la Champagne à travers des expériences authentiques adaptées à chaque génération.",
+
+"ourApproach": "Notre approche",
+"howHeroTitle": "Un voyage d'exception, imaginé autour de vous",
+"howHeroText": "De votre première conversation jusqu'à votre départ, chaque détail est soigneusement pensé pour créer une expérience exceptionnelle en Champagne.",
+"startPlanning": "Commencer à planifier votre voyage",
+
+"process": "Le Processus",
+"processTitle": "De la Vision à l'Expérience",
+"processText": "Une approche personnalisée conçue pour transformer vos envies en un voyage unique en Champagne.",
+
+"step1Title": "Premier échange",
+"step1Text": "Chaque voyage commence par une conversation personnelle. Nous prenons le temps de comprendre vos envies, vos attentes et l'expérience que vous imaginez.",
+
+"step2Title": "Création sur mesure",
+"step2Text": "À partir de votre vision, nous sélectionnons avec soin les expériences, partenaires et détails qui donneront vie à votre voyage privé en Champagne.",
+
+"step3Title": "Votre proposition personnalisée",
+"step3Text": "Sous 24 heures, nous vous présentons une proposition personnalisée comprenant des expériences et recommandations soigneusement sélectionnées.",
+
+"step4Title": "Votre voyage en Champagne",
+"step4Text": "Une fois confirmé, chaque détail est coordonné avant votre arrivée afin de garantir une expérience fluide et inoubliable.",
+
+"transparentApproach": "Une approche transparente",
+"feeTitle": "Nos frais de service et de coordination",
+"feeText": "Notre rôle est de concevoir, organiser et coordonner votre voyage en Champagne. Notre rémunération repose exclusivement sur des frais de coordination transparents.",
+"feePercentage": "de la valeur totale de votre voyage",
+"feeDetails": "Votre proposition personnalisée inclut le coût complet de tous les services sélectionnés. Chaque expérience reste directement fournie et réglée auprès de nos partenaires soigneusement choisis.",
+
+"beyondReservations": "Au-delà des réservations",
+"moreThanBooking": "Bien plus qu'un service de réservation",
+
+"value1Title": "Un accès authentique",
+"value1Text": "Grâce à notre expertise locale et à nos relations de confiance, nous révélons les lieux, les personnes et les histoires qui rendent la Champagne unique.",
+
+"value2Title": "Un gain de temps précieux",
+"value2Text": "Nous prenons en charge la recherche, l'organisation et la coordination afin que vous puissiez pleinement profiter de l'expérience.",
+
+"value3Title": "Une attention personnalisée",
+"value3Text": "Chaque voyage est conçu autour de vos attentes, de votre rythme et des moments que vous souhaitez créer.",
+
+"faq": "Questions fréquentes",
+"faqTitle": "Tout ce que vous devez savoir",
+
+"faq1Question": "Quand dois-je vous contacter ?",
+"faq1Answer": "Nous recommandons de nous contacter plusieurs semaines avant votre voyage afin de pouvoir concevoir chaque détail avec soin.",
+
+"faq2Question": "Organisez-vous des expériences de dernière minute ?",
+"faq2Answer": "Selon les disponibilités, nous pouvons parfois répondre à des demandes avec des délais plus courts.",
+
+"faq3Question": "Comment fonctionne le paiement ?",
+"faq3Answer": "Les frais de coordination sont réglés à Child & Co. Tous les autres services sont payés directement aux prestataires sélectionnés.",
+
+"ctaTitle": "Prêt à créer votre voyage en Champagne ?",
+"ctaText": "Partagez votre vision avec nous et laissez-nous créer une expérience entièrement imaginée autour de vous.",
+"ctaButton": "Commencer votre voyage",
+
+"backHome": "Retour à l'accueil"
+
+,
+"contactHeroTitle": "Planifiez votre voyage privé en Champagne",
+"contactHeroText": "Chaque expérience exceptionnelle commence par une conversation. Partagez votre vision avec nous et nous créerons un voyage en Champagne entièrement imaginé autour de vous.",
+
+"yourDetails": "Vos informations",
+"firstName": "Prénom",
+"lastName": "Nom",
+"email": "Adresse email",
+"country": "Pays de résidence",
+
+"yourJourney": "Votre voyage",
+"guests": "Nombre de participants",
+"budget": "Budget approximatif",
+"budget1": "Moins de 1 000 € par personne",
+"budget2": "1 000 € - 3 000 € par personne",
+"budget3": "3 000 € - 5 000 € par personne",
+"budget4": "5 000 €+ par personne",
+
+"yourInterests": "Vos envies",
+
+"interest1": "Maisons de Champagne privées",
+"interest2": "Producteurs familiaux",
+"interest3": "Gastronomie étoilée",
+"interest4": "Hébergement de luxe",
+"interest5": "Transport privé",
+"interest6": "Expériences dans les vignobles",
+"interest7": "Découvertes culturelles",
+"interest8": "Expériences romantiques",
+
+"tellUsMore": "Parlez-nous de votre projet",
+"messagePlaceholder": "Parlez-nous de vos attentes, occasions particulières, préférences ou de tout élément que nous devrions prendre en compte...",
+
+"requestProposal": "Demander votre proposition personnalisée",
+
+"craftedAroundYou": "Un voyage imaginé autour de vous",
+"craftedText1": "Chaque demande est étudiée personnellement afin de créer une expérience correspondant à vos envies, votre rythme et vos attentes.",
+"craftedText2": "Des grandes Maisons de Champagne aux domaines familiaux confidentiels, en passant par la gastronomie d'exception et les moments inoubliables, chaque détail est soigneusement pensé.",
+
+"commitment": "Notre engagement",
+"commitmentText": "Sous 24 heures, notre équipe étudiera votre demande et commencera à imaginer les premières idées pour votre expérience privée en Champagne.",
+
+"discoverJourney": "Découvrez comment votre voyage est créé",
+
+"contactStep1Title": "01 — Partagez votre vision",
+"contactStep1Text": "Parlez-nous de vos attentes et de vos préférences.",
+
+"contactStep2Title": "02 — Recevez votre proposition",
+"contactStep2Text": "Nous créons une expérience sur mesure autour de vos envies.",
+
+"contactStep3Title": "03 — Profitez de votre voyage",
+"contactStep3Text": "Chaque détail est coordonné avant votre arrivée."
+}
